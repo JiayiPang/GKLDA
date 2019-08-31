@@ -34,19 +34,8 @@
       </resource>
     </resources>
     <plugins>
-      <plugin>      
-      <artifactId>maven-compiler-plugin</artifactId>
-      <executions>
-        <execution>
-         <phase>test</phase>
-         <goals>
-          <goal>exec:java</goal>
-         </goals>
-         <configuration>
-          <mainClass>launch.MainEntry</mainClass>
-         </configuration>
-        </execution>
-       </executions>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>
         <configuration>
 		  <source/>

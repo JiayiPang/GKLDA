@@ -35,13 +35,17 @@ public class MainEntry {
 		try {
 			long startTime = System.currentTimeMillis();
 			System.out.println("Program Starts.");
+			
 			// Parse the arguments.
 			parser.parseArgument(args);
+			
 			// Check if the input directory is valid.
 			if (new File(cmdOption.inputCorporeaDirectory).listFiles() == null) {
-				System.err.println("Input directory is not correct, program exits!");
+				System.err
+						.println("Input directory is not correct, program exits!");
 				return;
 			}
+			
 			// Run the proposed method on the multiple domains.
 			TopicModelMultiDomainRunningTask task = new TopicModelMultiDomainRunningTask(
 					cmdOption);

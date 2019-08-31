@@ -16,13 +16,13 @@ public class CmdOption {
 
 	@Option(name = "-i", usage = "Specify the input directory of each domain "
 			+ "where each domain contains documents and vocabulary")
-	public String inputCorporeaDirectory = "/Users/wuyuanfujie/Code/CodeFromGitHub/GKLDA/Data/Input/Dataset/";
+	public String inputCorporeaDirectory = "../Data/Input/Dataset/";
 	
 	@Option(name = "-know", usage = "Specify the file path of knowledge")
-	public String inputKnowledgeFilePath = "/Users/wuyuanfujie/Code/CodeFromGitHub/GKLDA/Data/Input/Knowledge/Knowledge_DomainIndependent.txt";
+	public String inputKnowledgeFilePath = "../Data/Input/Knowledge/Knowledge_DomainIndependent.txt";
 
 	@Option(name = "-o", usage = "Specify the output root directory of the program")
-	public String outputRootDirectory = "/Users/wuyuanfujie/Code/CodeFromGitHub/GKLDA/Data/Output/";
+	public String outputRootDirectory = "../Data/Output/";
 
 	@Option(name = "-sdocs", usage = "Specify the suffix of input docs file")
 	public String suffixInputCorporeaDocs = ".docs";
