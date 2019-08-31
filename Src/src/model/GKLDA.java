@@ -420,8 +420,7 @@ public class GKLDA extends TopicModel {
 		updateCount(d, old_topic, ms, word, wordstr, -1);
 
 		// Compute the conditional distribution of Gibbs sampler.
-		ArrayList<MustSet> mustsetList = mustsets
-				.getMustSetListGivenWordstr(wordstr);
+		ArrayList<MustSet> mustsetList = mustsets.getMustSetListGivenWordstr(wordstr);
 		double[] p = new double[param.T * mustsetList.size()];
 		for (int t = 0; t < param.T; ++t) {
 			for (int si = 0; si < mustsetList.size(); ++si) {
