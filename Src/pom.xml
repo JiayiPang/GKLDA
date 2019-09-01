@@ -35,6 +35,22 @@
     </resources>
     <plugins>
       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.1.1</version>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>launch.MainEntry</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>
         <configuration>
@@ -58,7 +74,13 @@
       <url>http://repository.springsource.com/maven/bundles/external</url>
 	</repository>
   </repositories>
-  
+  <properties>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
   <dependencies>
   	<dependency>
   		<groupId>args4j</groupId>
@@ -66,5 +88,4 @@
   		<version>2.0.29</version>
   	</dependency>
   </dependencies>
-  
 </project>

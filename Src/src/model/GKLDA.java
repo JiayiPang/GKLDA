@@ -326,6 +326,7 @@ public class GKLDA extends TopicModel {
 	 * Get gamma[ms][i] which depends on the size of the must-set ms and gamma.
 	 */
 	public double getGammaBasedOnMustsetSize(int size) {
+		System.out.println(param.lambdaForComputingGamma);
 		if (size == 1) {
 			return 1;
 		}
